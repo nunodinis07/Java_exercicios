@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Main {
+
+   public static String juntarNome(String nome, String apelido){
+
+       Scanner Nome = new Scanner(System.in);
+
+       System.out.print("Escreve o teu nome: ");
+       nome = Nome.next();
+
+       System.out.print("Escreva o seu apelido: ");
+       apelido = Nome.next();
+
+       return nome + apelido;
+   }
+
+   public static int[] maior(int[] numeros){
+
+       Scanner Maior = new Scanner(System.in);
+
+       System.out.print("Escreva 5 numeros: ");
+       numeros = new int[]{Maior.nextInt()};
+
+       return numeros;
+   }
+/*
+   public static int soma(int[] numeros){
+
+   }
+
+   public static double media(double[] numeros){
+
+   }
+*/
+   public static void main(String[] args){
+       String nome = "";
+       String apelido = "";
+
+       System.out.printf("O seu nome é: \n" + juntarNome(nome, apelido));
+
+       int[] numeros = new int[0];
+       System.out.println("O maior numero que escreveu é: " + maior(numeros));
+   }
+}
